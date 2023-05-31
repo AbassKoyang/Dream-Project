@@ -217,6 +217,7 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: #EDE9E6;
+    overflow: auto;
 }
 
 main{
