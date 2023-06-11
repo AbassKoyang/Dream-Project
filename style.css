@@ -73,7 +73,7 @@ nav div {
     width: 100px;
     height: 30px;
     background-color: transparent;
-    border: 2px solid #EDE9E6;
+    border: 3px solid #EDE9E6;
     border-radius: 20px;
     margin-right: 40px;
     display: flex;
@@ -106,14 +106,15 @@ section{
     background-position: center;
     position: relative;
     overflow: hidden;
+    background-repeat: no-repeat;
 }
 
 section img{
     width: 100%;
     height: 100%;
     z-index: 1;
-    object-fit: fill;
-    display: none;
+    object-fit: cover;
+    display: block;
 }
 
 section .wrapper{
@@ -188,7 +189,8 @@ section .inputdec{
     height: 35px;
     background-color: rgb(0, 0, 0);
     color: white;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 500;
     border: none;
     border-radius: 5px;
     margin-left: auto;
@@ -196,7 +198,8 @@ section .inputdec{
 }
 
 .inputdec p{
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .inputdec i{
@@ -301,10 +304,19 @@ section .inputdec{
     }
     
     nav div{
+        border: 2px solid black;
         margin: 0;
         width: 120px;
         height: 50px;
         border-radius: 30px;
+    }
+
+    nav div:hover{
+        background-color: black;
+        transition: 0.3s ease;
+    }
+    nav div:hover a{
+       color: white;
     }
     
     nav div a{
@@ -529,6 +541,16 @@ nav div{
     margin: 0;
     width: 80px;
     height: 30px;
+    border: 2px solid black;
+}
+
+
+nav div:hover{
+    background-color: black;
+    transition: 0.3s ease;
+}
+nav div:hover a{
+   color: white;
 }
 
 nav div a{
